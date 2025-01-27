@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { login as authLogin } from "../store/authSlice.js"
 
-function Login() {
+function LoginComponent() {
     const navigate = useNavigate();
     const [error, setError] = useState("");
     const dispatch = useDispatch();
@@ -74,4 +74,4 @@ function Login() {
     )
 }
 
-export default Login
+export default LoginComponent
